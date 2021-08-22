@@ -30,7 +30,8 @@
   "scripts": {
     "start": "webpack serve --config config/webpack.dev.js",
     "build": "webpack --config config/webpack.prod.js",
-    "heroku-postbuild": "yarn build"
+    "heroku-postbuild": "yarn build",
+    "run:build": "node server.js"
   },
   "eslintConfig": {
     "extends": [
@@ -49,8 +50,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "engines": {
-    "node": "14.x"
   }
 }
